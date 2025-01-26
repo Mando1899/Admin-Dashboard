@@ -1,0 +1,21 @@
+.main-container {
+    display: grid;
+    height: 100vh;
+    grid-template: 1fr 4fr / 2fr 9fr;
+}
+
+.main-container > div {
+    border: 2px solid red;
+}
+
+.header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.side-bar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

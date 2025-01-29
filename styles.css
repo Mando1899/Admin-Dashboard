@@ -6,15 +6,125 @@ body {
 .main-container {
     display: grid;
     height: 100vh;
-    grid-template: 2fr 7fr / 2fr 8fr;
+    grid-template: 2fr 6fr / 2fr 8fr;
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: #FBFBFB;
+} 
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.profile-top {
+    width:27%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-top > svg {
+    width: 1.5em;
+}
+
+.profile-top > img {
+    border-radius: 50%;
+    width: 2.5em;
+}
+
+.profile-top > span {
+    font-weight: 600;   
+    font-size: 1.1em;
+}
+
+.search > svg {
+    width: 1.5em;
+    padding-right: 1em;
+}
+
+.search > svg {
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.search > input {
+    height: 2.3em;
+    width: 45em;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(224, 230, 237);
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.profile-bottom {
+    display: flex;
+    gap: 1em;
+    width: 35em;
+}
+
+.profile-bottom > img {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5;
+    align-self: center;
+
+}
+
+.profile-text > p {
+    font-weight: 600;
+    font-size: .9em;
+    margin: 0;
+}
+
+.profile-text > h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    gap: 2em;
+}
+
+.buttons > button {
+    border: none;
+    width: 6em;
+    text-align: center;
+    border-radius: 3em;
+    padding: 0.6em;
+    background-color: rgb(66, 148, 248);
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .side-bar {
@@ -50,7 +160,7 @@ body {
     font-size: 1.8em;
 }
 
-svg {
+.side-bar > div > svg {
     padding-right: 1.3em;
 }
 
@@ -69,5 +179,5 @@ svg {
 }
 
 .main-content {
-    background-color: #E8F9FF;
+    background-color: #e5e7eb;
 }

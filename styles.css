@@ -18,6 +18,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: #FBFBFB;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 } 
 
 .header-top {
@@ -135,6 +136,7 @@ body {
     grid-row-end: 3;
     background-color:rgb(91, 165, 255);
     gap: 1.4em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .side-bar > div {
@@ -180,4 +182,10 @@ body {
 
 .main-content {
     background-color: #e5e7eb;
+}
+
+.main-content {
+    position: relative;
+    z-index: -10;
+    display: block;
 }

@@ -5,7 +5,7 @@ body {
 
 .main-container {
     display: grid;
-    height: 100vh;
+    height: 110vh;
     grid-template: 2fr 6fr / 2fr 8fr;
 }
 
@@ -19,6 +19,7 @@ body {
     grid-row-end: 2;
     background-color: #FBFBFB;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 1em;
 } 
 
 .header-top {
@@ -182,10 +183,56 @@ body {
 
 .main-content {
     background-color: #e5e7eb;
-}
-
-.main-content {
     position: relative;
     z-index: -10;
-    display: block;
+    display: grid;
+    grid-template: 1fr / 5fr 2fr;
+    gap: 1em;
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5em;
+    gap: 1.5em;
+    margin: 1em 0 0 1em ;
+    padding-bottom: 1em;
+}
+
+.projects > h1 {
+    margin: 0;
+    margin-top: 0.5em;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-left: 0.5em solid rgb(255, 208, 0);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.project > div > h1 {
+    font-size: 1.2em;
+    margin: 1em 0 0 0;
+
+}
+
+.project > div > p {
+    margin: 0;
+}
+
+.project-svgs {
+    display: flex;
+    justify-content: end;  
+}
+
+.project-svgs > svg {
+    width: 1.5em;
+    margin-right: 1em;
 }

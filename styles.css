@@ -200,11 +200,11 @@ body {
     padding-bottom: 1em;
 }
 
-.projects > h1 {
+.content-header {
     margin: 0;
     margin-top: 0.5em;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .project {
@@ -236,3 +236,43 @@ body {
     width: 1.5em;
     margin-right: 1em;
 }
+
+.side-content {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements {
+    margin-top: 0.9em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 1.5em;
+}
+
+.announcement {
+    margin: 1em 2em 1em 2em;
+}
+
+.announcement > h2 {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.announcement > p {
+    color: #4a5158;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #919191;
+    height: 1.3px;
+    width: 80%;
+}
+

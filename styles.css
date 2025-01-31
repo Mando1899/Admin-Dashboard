@@ -215,6 +215,7 @@ body {
     border-left: 0.5em solid rgb(255, 208, 0);
     border-radius: 10px;
     padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .project > div > h1 {
@@ -245,12 +246,13 @@ body {
 
 .announcements {
     margin-top: 0.9em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding-top: 1em;
     height: fit-content;
     background-color: white;
     border-radius: 10px;
     margin-right: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .announcement {
@@ -276,3 +278,32 @@ body {
     width: 80%;
 }
 
+.trends {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: white;
+    margin: .5em 2em 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.trend {
+    display: flex;
+}
+
+.trend > img {
+    width: 3em;
+    border-radius: 50%;
+}
+
+.trend > div {
+    margin-left: 1em;
+}
+
+.trend > div > p {
+    color: #4a5158;
+    margin: 0;
+    font-size: 0.8em;
+}
